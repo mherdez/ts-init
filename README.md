@@ -51,9 +51,12 @@ Prettier: Para mantener un código limpio y ordenado.
     "@typescript-eslint/no-duplicate-enum-values": "error",
     "@typescript-eslint/no-inferrable-types": "warn",
     "@typescript-eslint/no-non-null-assertion": "off",
-    "@typescript-eslint/explicit-function-return-type": "warn"
+    "@typescript-eslint/explicit-function-return-type": "warn",
+    "@typescript-eslint/comma-dangle": "off",
+    "comma-dangle": "off"
   }
 }
+
 ```
 
 ## .prettierrc.json
@@ -62,11 +65,11 @@ Prettier: Para mantener un código limpio y ordenado.
 {
   "tabWidth": 2,
   "useTabs": false,
-  "trailingComma": "all",
+  "trailingComma": "none",
   "pluginSearchDirs": ["."],
   "overrides": [
     {
-      "files": "*.{ts*,js*}",
+      "files": "*.{js*,ts*}",
       "options": {
         "jsxSingleQuote": true,
         "semi": false,
@@ -75,6 +78,7 @@ Prettier: Para mantener un código limpio y ordenado.
     }
   ]
 }
+
 ```
 
 ## package.json
